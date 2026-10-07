@@ -265,7 +265,7 @@
     const track = document.querySelector("[data-play-track]");
     // i progetti in corso hanno la card ma non ancora la pagina: niente link, solo l'etichetta "In corso"
     track.insertAdjacentHTML("beforeend", PROJECTS.map((p, i) => `
-      <${p.soon ? 'div class="play-card is-soon" role="button" tabindex="0" aria-disabled="true" aria-label="' + p.title + ': ' + t("progetto in corso") + '"' : `a class="play-card" href="progetto.html?id=${p.slug}" data-cursor="${t("Vedi progetto")}"`}>
+      <${p.soon ? 'div class="play-card is-soon" role="button" tabindex="0" aria-disabled="true" aria-label="' + p.title + ': ' + t("progetto in corso") + '"' : `a class="play-card" href="progetto?id=${p.slug}" data-cursor="${t("Vedi progetto")}"`}>
         <div class="play-media"><img src="${p.cover}" alt="${t("Anteprima del progetto")} ${p.title}" loading="lazy">${p.soon ? `<span class="play-soon"><i class="dot dot-live"></i>${t("In corso")}</span>` : ""}</div>
         <p class="play-meta"><span>${pad(i + 1)}</span>${p.category} · ${p.year}</p>
         <h3><span data-vt-title>${p.title}</span></h3>

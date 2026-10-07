@@ -1,5 +1,5 @@
 /* =========================================================
-   Pagina di dettaglio: progetto.html?id=<slug>
+   Pagina di dettaglio: progetto?id=<slug> (file progetto.html)
    ========================================================= */
 (() => {
   if (!window.App) return; // librerie non disponibili (vedi main.js)
@@ -14,7 +14,7 @@
   if (index === -1) {
     main.innerHTML = `
       <section class="container p-hero">
-        <a class="back" href="index.html#progetti">${t("← Tutti i progetti")}</a>
+        <a class="back" href="./#progetti">${t("← Tutti i progetti")}</a>
         <h1 class="p-title">${t("Progetto non trovato")}</h1>
         <p class="p-lead">${t("Il link potrebbe essere sbagliato. Torna alla lista dei progetti.")}</p>
       </section>`;
@@ -284,7 +284,7 @@
   main.innerHTML = `
     <article${p.surface ? ` style="--card:${p.surface}"` : ""}>
       <header class="container p-hero">
-        <a class="back" href="index.html#progetti" data-intro>${t("← Tutti i progetti")}</a>
+        <a class="back" href="./#progetti" data-intro>${t("← Tutti i progetti")}</a>
         <p class="tag" data-intro><i class="dot dot-live"></i>${p.category} · ${p.year}</p>
         <h1 class="p-title"><span class="line"><span class="line-inner">${p.title}</span></span></h1>
         <p class="p-lead" data-intro>${p.summary}</p>
@@ -316,11 +316,11 @@
 
       <nav class="container p-end-wrap" aria-label="${t("Altri progetti")}">
        <div class="p-end">
-        <a class="p-back-btn" href="index.html#progetti">
+        <a class="p-back-btn" href="./#progetti">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="p-back-label-long">${t("Tutti i progetti")}</span><span class="p-back-label-short">${t("Progetti")}</span>
         </a>
-        <a class="p-next-card" href="progetto.html?id=${next.slug}" data-cursor-grow>
+        <a class="p-next-card" href="progetto?id=${next.slug}" data-cursor-grow>
           <span class="p-next-media"><img src="${next.cover}" alt="" loading="lazy"></span>
           <span class="p-next-text">
             <span class="p-next-label">${t("Prossimo")}<span class="p-back-label-long">${t(" progetto")}</span></span>

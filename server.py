@@ -20,6 +20,13 @@ class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
 
+    # come Cloudflare: /progetto apre progetto.html
+    def translate_path(self, path):
+        full = super().translate_path(path)
+        if not os.path.exists(full) and os.path.exists(full + ".html"):
+            return full + ".html"
+        return full
+
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 with http.server.ThreadingHTTPServer((HOST, PORT), NoCacheHandler) as httpd:

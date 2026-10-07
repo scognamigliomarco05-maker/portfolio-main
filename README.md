@@ -27,7 +27,7 @@ Poi apri http://localhost:5500
 
 I progetti compaiono nella sezione "Progetti" (scorrimento orizzontale) nello stesso ordine in cui sono scritti in `PROJECTS`.
 
-La pagina di dettaglio (`progetto.html?id=<slug>`) viene generata in automatico dai dati.
+La pagina di dettaglio (`progetto?id=<slug>`, file `progetto.html`) viene generata in automatico dai dati.
 
 ## Aggiornare il sito online
 

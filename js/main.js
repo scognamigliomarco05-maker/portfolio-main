@@ -12,7 +12,7 @@
   const { SITE } = window;
   const App = window.App || {};
   const isHome = document.body.dataset.page === "home";
-  const base = isHome ? "" : "index.html";
+  const base = isHome ? "" : "./";
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const finePointer = matchMedia("(hover: hover) and (pointer: fine)").matches;
 
@@ -139,7 +139,7 @@ ${langSwitch("nav-lang")}
           </div>
           <div>
             <p class="f-label">${t("Progetti")}</p>
-            <ul>${(window.PROJECTS || []).filter((p) => !p.soon).map((p) => `<li><a href="progetto.html?id=${p.slug}">${p.title}</a></li>`).join("")}</ul>
+            <ul>${(window.PROJECTS || []).filter((p) => !p.soon).map((p) => `<li><a href="progetto?id=${p.slug}">${p.title}</a></li>`).join("")}</ul>
           </div>
           <div class="footer-hello">
             <p class="f-label">${t("Scrivimi")}</p>

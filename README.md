@@ -5,7 +5,7 @@ Sito statico (HTML, CSS, JavaScript) senza build: basta aprirlo con un server lo
 ## Avviarlo in locale
 
 ```bash
-cd ~/Desktop/portfolio
+cd ~/Desktop/marco/portfolio
 python3 server.py
 ```
 

@@ -55,7 +55,7 @@
     "Apri il menu": "Open the menu",
     "Chiudi il menu": "Close the menu",
     "Lingua": "Language",
-    "Scrivimi": "Write to me",
+    "Scrivimi": "Email me",
     "Lavoriamo": "Let's work",
     "insieme!": "together!",
     "Torna su ↑": "Back to top ↑",
@@ -137,7 +137,7 @@
         {
           label: "Hi, I'm Marco",
           title: "Hi, I'm Marco.",
-          text: "I study Interfaces and Communication Technologies at the University of Trento and design digital experiences that start from people: I listen to them, understand what they need and design the interfaces in Figma. My diploma in computer science helps me see things from the point of view of those who actually build the product, so my projects stay concrete and feasible.",
+          text: "I study Interfaces and Communication Technologies at the University of Trento and design digital experiences that start from people: I listen to them, understand what they need and design the interfaces in Figma. My technical diploma in computer science helps me see things from the point of view of those who actually build the product, so my projects stay concrete and feasible.",
         },
         {
           label: "My method",
@@ -243,7 +243,7 @@
             { alt: "Sign-up and entry of sex, weight, height and age", title: "First sign-in.", caption: "A few details to get started: sex, weight, height and age." },
             { alt: "Uploading and confirming the medical report data", title: "The report.", caption: "You upload the doctor's PDF and confirm the data read by the system." },
             { alt: "Generating the therapy with AI", title: "The therapy.", caption: "The AI analyses the report and creates the exercise programme." },
-            { alt: "Weekly plan with today's training", title: "The plan.", caption: "Every day the training to do, week after week." },
+            { alt: "Weekly plan with today's training", title: "The plan.", caption: "Each day's training, week after week." },
           ],
         },
         {
@@ -283,7 +283,7 @@
     justcook: {
       summary: "Boxes of pre-portioned ingredients and an app with recipes, to help students living away from home eat healthily even when short on time.",
       role: "Group project · all phases",
-      context: "Semiotics, Sociology and Psychology of communication",
+      context: "Semiotics, Sociology and Psychology of Communication",
       duration: "A.Y. 2024/25",
       tools: ["Figma", "Value Proposition Design", "Surveys and interviews"],
       sections: [
@@ -341,11 +341,11 @@
           text: "Some recurring themes emerged from the interviews. Each one shaped a part of the product.",
           pairs: [
             { topic: "Weekly planning", insight: "Nobody follows a fixed plan: they decide day by day.", feature: "A flexible weekly plan that tells you which box to use and when." },
-            { topic: "Shopping", insight: "Something gets forgotten, or products are already spoiled.", feature: "Boxes you book in the app and pick up at the nearest supermarket." },
+            { topic: "Shopping", insight: "People forget things, or end up buying products that have already gone off.", feature: "Boxes you book in the app and pick up at the nearest supermarket." },
             { topic: "Time and cooking", insight: "With little time, people fall back on frozen food.", feature: "Pre-portioned ingredients and recipes ready in about 20 minutes." },
             { topic: "Skills", insight: "Nobody feels inexperienced, but few are real experts.", feature: "Step-by-step recipes, with video and written tutorials." },
             { topic: "Waste", insight: "Packs are too big for one person.", feature: "Single portion: you buy only what you need." },
-            { topic: "Self-expression", insight: "Food says who we are and what we care about.", feature: "Four boxes with four personalities, to pick according to yourself." },
+            { topic: "Self-expression", insight: "Food says who we are and what we care about.", feature: "Four boxes with four personalities: you pick the one that suits you." },
           ],
         },
         { divider: "The product", text: "Psychology of communication: the final product and how to make it known." },
@@ -379,8 +379,8 @@
             alt: "Just Cook logo: a pot on the four coloured stripes of the boxes",
             items: [
               { title: "Ironic", text: "A light tone and a name that plays things down: cooking shouldn't feel like one more chore." },
-              { title: "Reassuring", text: "Ready-made portions and simple recipes: even those who can't cook can make it." },
-              { title: "Empowering", text: "Eating well and not wasting become a choice to feel part of." },
+              { title: "Reassuring", text: "Ready-made portions and simple recipes: even people who can't cook can manage." },
+              { title: "Empowering", text: "Eating well and not wasting food become a choice you feel part of." },
             ],
           },
         },
@@ -397,7 +397,6 @@
           columns: [
             { title: "Instagram", text: "A profile with one post per box and the recipes, in the same style as the packaging." },
             { title: "WhatsApp groups", text: "Messages in freshers' group chats, where students actually get their news." },
-            { title: "Flyers with QR code", text: "At university and in study rooms, to get to the app in a moment." },
             { title: "Challenges with friends", text: "Weekly score and leaderboard: they push people to use the app and spread the word." },
           ],
         },
@@ -416,7 +415,7 @@
     smarthome: {
       summary: "A single app to run a smart home: devices, security, access and automations, designed with Material Design 3.",
       role: "Group project · all phases",
-      context: "Graphical interface design course",
+      context: "Graphical User Interface Design course",
       duration: "A.Y. 2025/26",
       sections: [
         {
@@ -437,7 +436,7 @@
           title: "One app for the whole home.",
           text: "The scenario: a company that makes and installs smart home devices asks us for the software to manage them. Today every device has its own app; we wanted to control them all from one place.",
           columns: [
-            { title: "The value", text: "A single software for the whole home sets the company apart from competitors and encourages customers to add new devices." },
+            { title: "The value", text: "A single app for the whole home sets the company apart from competitors and encourages customers to add new devices." },
             { title: "The constraints", text: "Only managing devices already installed: no sales, installation or hardware support." },
             { title: "The stakeholders", text: "Those who live in the home, those with limited access (babysitters, carers) and those just passing by, like guests and couriers." },
           ],
@@ -490,7 +489,7 @@
           text: "Meteora started as a group project for the Programming 2 course: a web app that gathers weather data from all over the world. After the exam I picked it up on my own and rebuilt its interface, from design to code.",
           columns: [
             { title: "A new design", text: "Every screen redesigned in a single style: dark palette, light blue and orange accents, glass cards and the Plus Jakarta Sans font." },
-            { title: "For every screen", text: "On desktop the menu is a sidebar, on mobile it becomes a bottom bar: every section adapts to the space." },
+            { title: "For every device", text: "On desktop the menu is a sidebar, on mobile it becomes a bottom bar: every section adapts to the space." },
             { title: "Installable", text: "It's a PWA: it installs on phone or computer like a real app, with its own icon." },
           ],
         },

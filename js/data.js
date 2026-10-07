@@ -328,7 +328,6 @@ window.PROJECTS = [
         columns: [
           { title: "Instagram", text: "Un profilo con un post per ogni box e le ricette, nello stesso stile del packaging." },
           { title: "Gruppi WhatsApp", text: "Messaggi nei gruppi delle matricole, dove gli studenti si informano davvero." },
-          { title: "Volantini con QR code", text: "In università e nelle aule studio, per arrivare all'app in un attimo." },
           { title: "Sfide tra amici", text: "Punteggio settimanale e classifica: spingono a usare l'app e a farla conoscere." },
         ],
       },

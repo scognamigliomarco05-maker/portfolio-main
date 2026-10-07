@@ -12,6 +12,7 @@
   const index = LIST.findIndex((p) => p.slug === id);
 
   if (index === -1) {
+    document.head.insertAdjacentHTML("beforeend", '<meta name="robots" content="noindex">');
     main.innerHTML = `
       <section class="container p-hero">
         <a class="back" href="./#progetti">${t("← Tutti i progetti")}</a>
@@ -25,6 +26,8 @@
   const next = LIST[(index + 1) % LIST.length];
   document.title = `${p.title} — ${SITE.name}`;
   document.querySelector('meta[name="description"]').content = p.summary;
+  // per Google: indirizzo ufficiale di questa pagina
+  document.querySelector('link[rel="canonical"]').href = `https://scognamigliomarco.com/progetto?id=${p.slug}`;
 
   // Mappa del sistema (tela 1800×1000, soggetto tra x 760–1640): nodi che si illuminano
   function systemArt() {
